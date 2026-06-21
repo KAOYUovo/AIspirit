@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B000000000000000000000F /* AttentionStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000000E /* AttentionStateMachine.swift */; };
+		0B0000000000000000000011 /* CGEventSourceIdleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000010 /* CGEventSourceIdleDetector.swift */; };
+		0B0000000000000000000013 /* CoWatchingStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000012 /* CoWatchingStateMachine.swift */; };
+		0B0000000000000000000015 /* CollectorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000014 /* CollectorProtocols.swift */; };
+		0B0000000000000000000017 /* CollectorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000016 /* CollectorTypes.swift */; };
+		0B0000000000000000000019 /* ContentTypeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000018 /* ContentTypeDetector.swift */; };
+		0B000000000000000000001B /* FileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000001A /* FileLogger.swift */; };
+		0B000000000000000000001D /* FrontAppGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000001C /* FrontAppGate.swift */; };
+		0B000000000000000000001F /* GateChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000001E /* GateChain.swift */; };
+		0B0000000000000000000021 /* IdleGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000020 /* IdleGate.swift */; };
+		0B0000000000000000000023 /* ImageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000022 /* ImageEncoder.swift */; };
+		0B0000000000000000000025 /* InMemoryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000024 /* InMemoryLogger.swift */; };
+		0B0000000000000000000027 /* InputActivityWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000026 /* InputActivityWindow.swift */; };
+		0B0000000000000000000029 /* JSONLWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000028 /* JSONLWriter.swift */; };
+		0B000000000000000000002B /* KeyframeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000002A /* KeyframeExtractor.swift */; };
+		0B000000000000000000002D /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000002C /* Logging.swift */; };
+		0B000000000000000000002F /* NSWorkspaceFrontAppDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000002E /* NSWorkspaceFrontAppDetector.swift */; };
+		0B0000000000000000000031 /* OCRRecognitionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000030 /* OCRRecognitionGate.swift */; };
+		0B0000000000000000000033 /* OCRTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000032 /* OCRTextRecognizer.swift */; };
+		0B0000000000000000000035 /* PerceptionDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000034 /* PerceptionDTOs.swift */; };
+		0B0000000000000000000037 /* PerceptionDiagnosticEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000036 /* PerceptionDiagnosticEvent.swift */; };
+		0B0000000000000000000039 /* PerceptionDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000038 /* PerceptionDiagnostics.swift */; };
+		0B000000000000000000003B /* PerceptionFeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000003A /* PerceptionFeatureFlags.swift */; };
+		0B000000000000000000003D /* PerceptionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000003C /* PerceptionModule.swift */; };
+		0B000000000000000000003F /* PerceptionParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000003E /* PerceptionParameters.swift */; };
+		0B0000000000000000000041 /* PerceptionProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000040 /* PerceptionProfile.swift */; };
+		0B0000000000000000000043 /* PerceptionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000042 /* PerceptionScheduler.swift */; };
+		0B0000000000000000000045 /* PerceptionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000044 /* PerceptionTypes.swift */; };
+		0B0000000000000000000047 /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000046 /* PowerMonitor.swift */; };
+		0B0000000000000000000049 /* PowerThermalGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000048 /* PowerThermalGate.swift */; };
+		0B000000000000000000004B /* PrivacyBlocklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000004A /* PrivacyBlocklist.swift */; };
+		0B000000000000000000004D /* PrivacyContentGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000004C /* PrivacyContentGate.swift */; };
+		0B000000000000000000004F /* RegionDHashComputer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000004E /* RegionDHashComputer.swift */; };
+		0B0000000000000000000051 /* SCStreamCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000050 /* SCStreamCapturer.swift */; };
+		0B0000000000000000000053 /* ScreenCaptureGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000052 /* ScreenCaptureGate.swift */; };
+		0B0000000000000000000055 /* ScreenCaptureKitCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000054 /* ScreenCaptureKitCapturer.swift */; };
+		0B0000000000000000000057 /* ScreenStateGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000056 /* ScreenStateGate.swift */; };
+		0B0000000000000000000059 /* ScreenStateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000058 /* ScreenStateMonitor.swift */; };
+		0B000000000000000000005B /* ScreenStreamCaptureGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000005A /* ScreenStreamCaptureGate.swift */; };
+		0B000000000000000000005D /* SnapshotAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000005C /* SnapshotAssembler.swift */; };
+		0B000000000000000000005F /* SystemAudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000005E /* SystemAudioCapture.swift */; };
+		0B0000000000000000000061 /* SystemAudioCaptureGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000060 /* SystemAudioCaptureGate.swift */; };
+		0B0000000000000000000063 /* WebMetadataSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000062 /* WebMetadataSearch.swift */; };
+		0B0000000000000000000065 /* WebMetadataSearchGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000064 /* WebMetadataSearchGate.swift */; };
+		0B0000000000000000000067 /* WhisperTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000066 /* WhisperTranscriber.swift */; };
+		0B0000000000000000000069 /* WhisperTranscriptionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000068 /* WhisperTranscriptionGate.swift */; };
+		0B000000000000000000006B /* AttentionStateFixtureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000006A /* AttentionStateFixtureFactory.swift */; };
+		0B000000000000000000006D /* FixtureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000006C /* FixtureLoader.swift */; };
+		0B000000000000000000006F /* FixtureWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000006E /* FixtureWriter.swift */; };
+		0B0000000000000000000071 /* GateChainFixtureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000070 /* GateChainFixtureFactory.swift */; };
+		0B0000000000000000000073 /* LivePerceptionRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000072 /* LivePerceptionRunner.swift */; };
+		0B0000000000000000000075 /* MockCollectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000074 /* MockCollectors.swift */; };
+		0B0000000000000000000077 /* MockScenarioFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000076 /* MockScenarioFactory.swift */; };
+		0B0000000000000000000079 /* PerceptionReplayRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0000000000000000000078 /* PerceptionReplayRunner.swift */; };
+		0B000000000000000000007B /* ReplayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000007A /* ReplayResult.swift */; };
+		0B000000000000000000007D /* ReplayScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000007C /* ReplayScenario.swift */; };
+		0B000000000000000000007F /* PerceptionLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000007E /* PerceptionLabApp.swift */; };
+		0B0000000000000000000089 /* libPerception.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000000B /* libPerception.a */; };
+		0B000000000000000000008A /* libDebugTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000000C /* libDebugTools.a */; };
+		0B000000000000000000008B /* libPerception.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B000000000000000000000B /* libPerception.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B000000000000000000008C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0000000000000000000008;
+			remoteInfo = Perception;
+		};
+		0B000000000000000000008E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0000000000000000000009;
+			remoteInfo = DebugTools;
+		};
+		0B0000000000000000000090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0000000000000000000008;
+			remoteInfo = Perception;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B000000000000000000000B /* libPerception.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPerception.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B000000000000000000000C /* libDebugTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDebugTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B000000000000000000000D /* PerceptionLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerceptionLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B000000000000000000000E /* AttentionStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionStateMachine.swift; sourceTree = "<group>"; };
+		0B0000000000000000000010 /* CGEventSourceIdleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGEventSourceIdleDetector.swift; sourceTree = "<group>"; };
+		0B0000000000000000000012 /* CoWatchingStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoWatchingStateMachine.swift; sourceTree = "<group>"; };
+		0B0000000000000000000014 /* CollectorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorProtocols.swift; sourceTree = "<group>"; };
+		0B0000000000000000000016 /* CollectorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorTypes.swift; sourceTree = "<group>"; };
+		0B0000000000000000000018 /* ContentTypeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeDetector.swift; sourceTree = "<group>"; };
+		0B000000000000000000001A /* FileLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLogger.swift; sourceTree = "<group>"; };
+		0B000000000000000000001C /* FrontAppGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontAppGate.swift; sourceTree = "<group>"; };
+		0B000000000000000000001E /* GateChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateChain.swift; sourceTree = "<group>"; };
+		0B0000000000000000000020 /* IdleGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000022 /* ImageEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEncoder.swift; sourceTree = "<group>"; };
+		0B0000000000000000000024 /* InMemoryLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryLogger.swift; sourceTree = "<group>"; };
+		0B0000000000000000000026 /* InputActivityWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputActivityWindow.swift; sourceTree = "<group>"; };
+		0B0000000000000000000028 /* JSONLWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLWriter.swift; sourceTree = "<group>"; };
+		0B000000000000000000002A /* KeyframeExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeExtractor.swift; sourceTree = "<group>"; };
+		0B000000000000000000002C /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		0B000000000000000000002E /* NSWorkspaceFrontAppDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSWorkspaceFrontAppDetector.swift; sourceTree = "<group>"; };
+		0B0000000000000000000030 /* OCRRecognitionGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRRecognitionGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000032 /* OCRTextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRTextRecognizer.swift; sourceTree = "<group>"; };
+		0B0000000000000000000034 /* PerceptionDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionDTOs.swift; sourceTree = "<group>"; };
+		0B0000000000000000000036 /* PerceptionDiagnosticEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionDiagnosticEvent.swift; sourceTree = "<group>"; };
+		0B0000000000000000000038 /* PerceptionDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionDiagnostics.swift; sourceTree = "<group>"; };
+		0B000000000000000000003A /* PerceptionFeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionFeatureFlags.swift; sourceTree = "<group>"; };
+		0B000000000000000000003C /* PerceptionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionModule.swift; sourceTree = "<group>"; };
+		0B000000000000000000003E /* PerceptionParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionParameters.swift; sourceTree = "<group>"; };
+		0B0000000000000000000040 /* PerceptionProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionProfile.swift; sourceTree = "<group>"; };
+		0B0000000000000000000042 /* PerceptionScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionScheduler.swift; sourceTree = "<group>"; };
+		0B0000000000000000000044 /* PerceptionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionTypes.swift; sourceTree = "<group>"; };
+		0B0000000000000000000046 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		0B0000000000000000000048 /* PowerThermalGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerThermalGate.swift; sourceTree = "<group>"; };
+		0B000000000000000000004A /* PrivacyBlocklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyBlocklist.swift; sourceTree = "<group>"; };
+		0B000000000000000000004C /* PrivacyContentGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyContentGate.swift; sourceTree = "<group>"; };
+		0B000000000000000000004E /* RegionDHashComputer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDHashComputer.swift; sourceTree = "<group>"; };
+		0B0000000000000000000050 /* SCStreamCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStreamCapturer.swift; sourceTree = "<group>"; };
+		0B0000000000000000000052 /* ScreenCaptureGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000054 /* ScreenCaptureKitCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureKitCapturer.swift; sourceTree = "<group>"; };
+		0B0000000000000000000056 /* ScreenStateGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStateGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000058 /* ScreenStateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStateMonitor.swift; sourceTree = "<group>"; };
+		0B000000000000000000005A /* ScreenStreamCaptureGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStreamCaptureGate.swift; sourceTree = "<group>"; };
+		0B000000000000000000005C /* SnapshotAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAssembler.swift; sourceTree = "<group>"; };
+		0B000000000000000000005E /* SystemAudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioCapture.swift; sourceTree = "<group>"; };
+		0B0000000000000000000060 /* SystemAudioCaptureGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioCaptureGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000062 /* WebMetadataSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMetadataSearch.swift; sourceTree = "<group>"; };
+		0B0000000000000000000064 /* WebMetadataSearchGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMetadataSearchGate.swift; sourceTree = "<group>"; };
+		0B0000000000000000000066 /* WhisperTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTranscriber.swift; sourceTree = "<group>"; };
+		0B0000000000000000000068 /* WhisperTranscriptionGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTranscriptionGate.swift; sourceTree = "<group>"; };
+		0B000000000000000000006A /* AttentionStateFixtureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionStateFixtureFactory.swift; sourceTree = "<group>"; };
+		0B000000000000000000006C /* FixtureLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureLoader.swift; sourceTree = "<group>"; };
+		0B000000000000000000006E /* FixtureWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureWriter.swift; sourceTree = "<group>"; };
+		0B0000000000000000000070 /* GateChainFixtureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateChainFixtureFactory.swift; sourceTree = "<group>"; };
+		0B0000000000000000000072 /* LivePerceptionRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePerceptionRunner.swift; sourceTree = "<group>"; };
+		0B0000000000000000000074 /* MockCollectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCollectors.swift; sourceTree = "<group>"; };
+		0B0000000000000000000076 /* MockScenarioFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScenarioFactory.swift; sourceTree = "<group>"; };
+		0B0000000000000000000078 /* PerceptionReplayRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionReplayRunner.swift; sourceTree = "<group>"; };
+		0B000000000000000000007A /* ReplayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayResult.swift; sourceTree = "<group>"; };
+		0B000000000000000000007C /* ReplayScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayScenario.swift; sourceTree = "<group>"; };
+		0B000000000000000000007E /* PerceptionLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionLabApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B0000000000000000000081 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000084 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( 0B000000000000000000008B /* libPerception.a in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000087 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( 0B0000000000000000000089 /* libPerception.a in Frameworks */, 0B000000000000000000008A /* libDebugTools.a in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B0000000000000000000002 = {isa = PBXGroup; children = ( 0B0000000000000000000004 /* Sources */, 0B0000000000000000000003 /* Products */, ); sourceTree = "<group>"; };
+		0B0000000000000000000004 /* Sources */ = {isa = PBXGroup; children = ( 0B0000000000000000000005 /* Perception */, 0B0000000000000000000006 /* DebugTools */, 0B0000000000000000000007 /* PerceptionLabApp */, ); path = Sources; sourceTree = "<group>"; };
+		0B0000000000000000000005 /* Perception */ = {isa = PBXGroup; children = ( 0B000000000000000000000E /* AttentionStateMachine.swift */, 0B0000000000000000000010 /* CGEventSourceIdleDetector.swift */, 0B0000000000000000000012 /* CoWatchingStateMachine.swift */, 0B0000000000000000000014 /* CollectorProtocols.swift */, 0B0000000000000000000016 /* CollectorTypes.swift */, 0B0000000000000000000018 /* ContentTypeDetector.swift */, 0B000000000000000000001A /* FileLogger.swift */, 0B000000000000000000001C /* FrontAppGate.swift */, 0B000000000000000000001E /* GateChain.swift */, 0B0000000000000000000020 /* IdleGate.swift */, 0B0000000000000000000022 /* ImageEncoder.swift */, 0B0000000000000000000024 /* InMemoryLogger.swift */, 0B0000000000000000000026 /* InputActivityWindow.swift */, 0B0000000000000000000028 /* JSONLWriter.swift */, 0B000000000000000000002A /* KeyframeExtractor.swift */, 0B000000000000000000002C /* Logging.swift */, 0B000000000000000000002E /* NSWorkspaceFrontAppDetector.swift */, 0B0000000000000000000030 /* OCRRecognitionGate.swift */, 0B0000000000000000000032 /* OCRTextRecognizer.swift */, 0B0000000000000000000034 /* PerceptionDTOs.swift */, 0B0000000000000000000036 /* PerceptionDiagnosticEvent.swift */, 0B0000000000000000000038 /* PerceptionDiagnostics.swift */, 0B000000000000000000003A /* PerceptionFeatureFlags.swift */, 0B000000000000000000003C /* PerceptionModule.swift */, 0B000000000000000000003E /* PerceptionParameters.swift */, 0B0000000000000000000040 /* PerceptionProfile.swift */, 0B0000000000000000000042 /* PerceptionScheduler.swift */, 0B0000000000000000000044 /* PerceptionTypes.swift */, 0B0000000000000000000046 /* PowerMonitor.swift */, 0B0000000000000000000048 /* PowerThermalGate.swift */, 0B000000000000000000004A /* PrivacyBlocklist.swift */, 0B000000000000000000004C /* PrivacyContentGate.swift */, 0B000000000000000000004E /* RegionDHashComputer.swift */, 0B0000000000000000000050 /* SCStreamCapturer.swift */, 0B0000000000000000000052 /* ScreenCaptureGate.swift */, 0B0000000000000000000054 /* ScreenCaptureKitCapturer.swift */, 0B0000000000000000000056 /* ScreenStateGate.swift */, 0B0000000000000000000058 /* ScreenStateMonitor.swift */, 0B000000000000000000005A /* ScreenStreamCaptureGate.swift */, 0B000000000000000000005C /* SnapshotAssembler.swift */, 0B000000000000000000005E /* SystemAudioCapture.swift */, 0B0000000000000000000060 /* SystemAudioCaptureGate.swift */, 0B0000000000000000000062 /* WebMetadataSearch.swift */, 0B0000000000000000000064 /* WebMetadataSearchGate.swift */, 0B0000000000000000000066 /* WhisperTranscriber.swift */, 0B0000000000000000000068 /* WhisperTranscriptionGate.swift */, ); path = Perception; sourceTree = "<group>"; };
+		0B0000000000000000000006 /* DebugTools */ = {isa = PBXGroup; children = ( 0B000000000000000000006A /* AttentionStateFixtureFactory.swift */, 0B000000000000000000006C /* FixtureLoader.swift */, 0B000000000000000000006E /* FixtureWriter.swift */, 0B0000000000000000000070 /* GateChainFixtureFactory.swift */, 0B0000000000000000000072 /* LivePerceptionRunner.swift */, 0B0000000000000000000074 /* MockCollectors.swift */, 0B0000000000000000000076 /* MockScenarioFactory.swift */, 0B0000000000000000000078 /* PerceptionReplayRunner.swift */, 0B000000000000000000007A /* ReplayResult.swift */, 0B000000000000000000007C /* ReplayScenario.swift */, ); path = DebugTools; sourceTree = "<group>"; };
+		0B0000000000000000000007 /* PerceptionLabApp */ = {isa = PBXGroup; children = ( 0B000000000000000000007E /* PerceptionLabApp.swift */, ); path = PerceptionLabApp; sourceTree = "<group>"; };
+		0B0000000000000000000003 /* Products */ = {isa = PBXGroup; children = ( 0B000000000000000000000B /* libPerception.a */, 0B000000000000000000000C /* libDebugTools.a */, 0B000000000000000000000D /* PerceptionLabApp.app */, ); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B0000000000000000000008 /* Perception */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0000000000000000000095 /* Build configuration list for PBXNativeTarget "Perception" */;
+			buildPhases = (
+				0B0000000000000000000080 /* Sources */,
+				0B0000000000000000000081 /* Frameworks */,
+				0B0000000000000000000082 /* Resources */,
+			);
+			buildRules = ( );
+			dependencies = (
+			);
+			name = Perception;
+			productName = Perception;
+			productReference = 0B000000000000000000000B /* libPerception.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0B0000000000000000000009 /* DebugTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0000000000000000000098 /* Build configuration list for PBXNativeTarget "DebugTools" */;
+			buildPhases = (
+				0B0000000000000000000083 /* Sources */,
+				0B0000000000000000000084 /* Frameworks */,
+				0B0000000000000000000085 /* Resources */,
+			);
+			buildRules = ( );
+			dependencies = (
+				0B0000000000000000000091 /* PBXTargetDependency */ ,
+			);
+			name = DebugTools;
+			productName = DebugTools;
+			productReference = 0B000000000000000000000C /* libDebugTools.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0B000000000000000000000A /* PerceptionLabApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B000000000000000000009B /* Build configuration list for PBXNativeTarget "PerceptionLabApp" */;
+			buildPhases = (
+				0B0000000000000000000086 /* Sources */,
+				0B0000000000000000000087 /* Frameworks */,
+				0B0000000000000000000088 /* Resources */,
+			);
+			buildRules = ( );
+			dependencies = (
+				0B000000000000000000008D /* PBXTargetDependency */ ,
+				0B000000000000000000008F /* PBXTargetDependency */ ,
+			);
+			name = PerceptionLabApp;
+			productName = PerceptionLabApp;
+			productReference = 0B000000000000000000000D /* PerceptionLabApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2650; LastUpgradeCheck = 2650; TargetAttributes = {
+				0B0000000000000000000008 = { CreatedOnToolsVersion = 26.5; };
+				0B0000000000000000000009 = { CreatedOnToolsVersion = 26.5; };
+				0B000000000000000000000A = { CreatedOnToolsVersion = 26.5; };
+			}; };
+			buildConfigurationList = 0B0000000000000000000092 /* Build configuration list for PBXProject "AIspiritMac" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = ( en, Base, );
+			mainGroup = 0B0000000000000000000002;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0B0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = ( 0B0000000000000000000008 /* Perception */, 0B0000000000000000000009 /* DebugTools */, 0B000000000000000000000A /* PerceptionLabApp */, );
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B0000000000000000000082 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000085 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000088 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B0000000000000000000080 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 0B000000000000000000000F /* AttentionStateMachine.swift in Sources */, 0B0000000000000000000011 /* CGEventSourceIdleDetector.swift in Sources */, 0B0000000000000000000013 /* CoWatchingStateMachine.swift in Sources */, 0B0000000000000000000015 /* CollectorProtocols.swift in Sources */, 0B0000000000000000000017 /* CollectorTypes.swift in Sources */, 0B0000000000000000000019 /* ContentTypeDetector.swift in Sources */, 0B000000000000000000001B /* FileLogger.swift in Sources */, 0B000000000000000000001D /* FrontAppGate.swift in Sources */, 0B000000000000000000001F /* GateChain.swift in Sources */, 0B0000000000000000000021 /* IdleGate.swift in Sources */, 0B0000000000000000000023 /* ImageEncoder.swift in Sources */, 0B0000000000000000000025 /* InMemoryLogger.swift in Sources */, 0B0000000000000000000027 /* InputActivityWindow.swift in Sources */, 0B0000000000000000000029 /* JSONLWriter.swift in Sources */, 0B000000000000000000002B /* KeyframeExtractor.swift in Sources */, 0B000000000000000000002D /* Logging.swift in Sources */, 0B000000000000000000002F /* NSWorkspaceFrontAppDetector.swift in Sources */, 0B0000000000000000000031 /* OCRRecognitionGate.swift in Sources */, 0B0000000000000000000033 /* OCRTextRecognizer.swift in Sources */, 0B0000000000000000000035 /* PerceptionDTOs.swift in Sources */, 0B0000000000000000000037 /* PerceptionDiagnosticEvent.swift in Sources */, 0B0000000000000000000039 /* PerceptionDiagnostics.swift in Sources */, 0B000000000000000000003B /* PerceptionFeatureFlags.swift in Sources */, 0B000000000000000000003D /* PerceptionModule.swift in Sources */, 0B000000000000000000003F /* PerceptionParameters.swift in Sources */, 0B0000000000000000000041 /* PerceptionProfile.swift in Sources */, 0B0000000000000000000043 /* PerceptionScheduler.swift in Sources */, 0B0000000000000000000045 /* PerceptionTypes.swift in Sources */, 0B0000000000000000000047 /* PowerMonitor.swift in Sources */, 0B0000000000000000000049 /* PowerThermalGate.swift in Sources */, 0B000000000000000000004B /* PrivacyBlocklist.swift in Sources */, 0B000000000000000000004D /* PrivacyContentGate.swift in Sources */, 0B000000000000000000004F /* RegionDHashComputer.swift in Sources */, 0B0000000000000000000051 /* SCStreamCapturer.swift in Sources */, 0B0000000000000000000053 /* ScreenCaptureGate.swift in Sources */, 0B0000000000000000000055 /* ScreenCaptureKitCapturer.swift in Sources */, 0B0000000000000000000057 /* ScreenStateGate.swift in Sources */, 0B0000000000000000000059 /* ScreenStateMonitor.swift in Sources */, 0B000000000000000000005B /* ScreenStreamCaptureGate.swift in Sources */, 0B000000000000000000005D /* SnapshotAssembler.swift in Sources */, 0B000000000000000000005F /* SystemAudioCapture.swift in Sources */, 0B0000000000000000000061 /* SystemAudioCaptureGate.swift in Sources */, 0B0000000000000000000063 /* WebMetadataSearch.swift in Sources */, 0B0000000000000000000065 /* WebMetadataSearchGate.swift in Sources */, 0B0000000000000000000067 /* WhisperTranscriber.swift in Sources */, 0B0000000000000000000069 /* WhisperTranscriptionGate.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000083 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 0B000000000000000000006B /* AttentionStateFixtureFactory.swift in Sources */, 0B000000000000000000006D /* FixtureLoader.swift in Sources */, 0B000000000000000000006F /* FixtureWriter.swift in Sources */, 0B0000000000000000000071 /* GateChainFixtureFactory.swift in Sources */, 0B0000000000000000000073 /* LivePerceptionRunner.swift in Sources */, 0B0000000000000000000075 /* MockCollectors.swift in Sources */, 0B0000000000000000000077 /* MockScenarioFactory.swift in Sources */, 0B0000000000000000000079 /* PerceptionReplayRunner.swift in Sources */, 0B000000000000000000007B /* ReplayResult.swift in Sources */, 0B000000000000000000007D /* ReplayScenario.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		0B0000000000000000000086 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 0B000000000000000000007F /* PerceptionLabApp.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B000000000000000000008D /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 0B0000000000000000000008 /* Perception */; targetProxy = 0B000000000000000000008C /* PBXContainerItemProxy */; };
+		0B000000000000000000008F /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 0B0000000000000000000009 /* DebugTools */; targetProxy = 0B000000000000000000008E /* PBXContainerItemProxy */; };
+		0B0000000000000000000091 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 0B0000000000000000000008 /* Perception */; targetProxy = 0B0000000000000000000090 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B0000000000000000000093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OBJROOT = "$(PROJECT_DIR)/.xcode-intermediates";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = "$(PROJECT_DIR)/.xcode-products";
+			};
+			name = Debug;
+		};
+		0B0000000000000000000094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OBJROOT = "$(PROJECT_DIR)/.xcode-intermediates";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "$(PROJECT_DIR)/.xcode-products";
+			};
+			name = Release;
+		};
+		0B0000000000000000000096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0B0000000000000000000097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0B0000000000000000000099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0B000000000000000000009A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0B000000000000000000009C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Perception Lab";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSApplicationSupportsAutomaticGraphicsSwitching = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aispirit.PerceptionLabApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0B000000000000000000009D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Perception Lab";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSApplicationSupportsAutomaticGraphicsSwitching = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aispirit.PerceptionLabApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B0000000000000000000092 /* Build configuration list for PBXProject "AIspiritMac" */ = {isa = XCConfigurationList; buildConfigurations = ( 0B0000000000000000000093 /* Debug */, 0B0000000000000000000094 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		0B0000000000000000000095 /* Build configuration list for PBXNativeTarget "Perception" */ = {isa = XCConfigurationList; buildConfigurations = ( 0B0000000000000000000096 /* Debug */, 0B0000000000000000000097 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		0B0000000000000000000098 /* Build configuration list for PBXNativeTarget "DebugTools" */ = {isa = XCConfigurationList; buildConfigurations = ( 0B0000000000000000000099 /* Debug */, 0B000000000000000000009A /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		0B000000000000000000009B /* Build configuration list for PBXNativeTarget "PerceptionLabApp" */ = {isa = XCConfigurationList; buildConfigurations = ( 0B000000000000000000009C /* Debug */, 0B000000000000000000009D /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 0B0000000000000000000001 /* Project object */;
+}

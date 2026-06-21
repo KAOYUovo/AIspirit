@@ -1,0 +1,63 @@
+custom_rules:
+  forbid_direct_screen_capture:
+    name: "Do not call ScreenCaptureKit directly outside screen capture collectors"
+    regex: "SCScreenshotManager|SCShareableContent"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/ScreenCaptureKitCapturer.swift"
+    message: "Use the ScreenCapturing protocol instead."
+
+  forbid_direct_screen_stream:
+    name: "Do not call SCStream directly outside stream collector"
+    regex: "\\bSCStream\\b"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/SCStreamCapturer.swift"
+    message: "Use the ScreenStreaming protocol instead."
+
+  forbid_direct_idle_detection:
+    name: "Do not call CGEventSource directly outside idle detector"
+    regex: "CGEventSource"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/CGEventSourceIdleDetector.swift"
+    message: "Use the IdleDetecting protocol instead."
+
+  forbid_direct_front_app_detection:
+    name: "Do not call NSWorkspace directly outside front app or screen state collectors"
+    regex: "NSWorkspace\\.shared|screensDidSleepNotification|screensDidWakeNotification|willSleepNotification|didWakeNotification"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/NSWorkspaceFrontAppDetector.swift|Sources/Perception/ScreenStateMonitor.swift"
+    message: "Use FrontAppDetecting or ScreenStateMonitor instead."
+
+  forbid_direct_window_list:
+    name: "Do not call CGWindowListCopyWindowInfo directly outside front app detector"
+    regex: "CGWindowListCopyWindowInfo"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/NSWorkspaceFrontAppDetector.swift"
+    message: "Use FrontAppDetecting instead."
+
+  forbid_direct_ocr:
+    name: "Do not call Vision OCR directly outside OCRTextRecognizer"
+    regex: "VNRecognizeTextRequest"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/OCRTextRecognizer.swift"
+    message: "Use OCRTextRecognizing instead."
+
+  forbid_direct_whisper:
+    name: "Do not call Whisper directly outside WhisperTranscriber"
+    regex: "\\bWhisper\\b"
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/WhisperTranscriber.swift"
+    message: "Use WhisperTranscribing instead."
+
+  forbid_direct_logging:
+    name: "Do not use print or NSLog directly; use Logging"
+    regex: "\\b(print|NSLog)\\s*\\("
+    included: "Sources/.*\\.swift"
+    excluded: "Sources/Perception/FileLogger.swift"
+    message: "Use the Logging protocol instead."
+
+  forbid_perception_import_debugtools:
+    name: "Production Perception code must not import DebugTools"
+    regex: "^import DebugTools\\b"
+    included: "Sources/Perception/.*\\.swift"
+    message: "DebugTools must not be imported by production Perception code."
+
